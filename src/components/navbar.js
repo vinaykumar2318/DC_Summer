@@ -38,7 +38,7 @@ const Navbar = () => {
             <nav className="w-full bg-white shadow-md mt-6 mb-6 p-2 rounded-xl">
                 <div className="flex justify-between items-center px-4">
                     {/* Logo (Optional) */}
-                    <div className="text-lg font-bold text-gray-700">Brand</div>
+                    <div className="text-lg font-bold text-gray-700">CETSD</div>
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex space-x-6 text-lg font-medium text-gray-700">
