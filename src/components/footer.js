@@ -31,7 +31,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="text-center text-sm text-gray-400 mt-6 border-t border-gray-700 pt-4">
+            <div className="text-center text-sm text-black mt-6 border-t border-gray-700 pt-4">
                 ©2025 Center for Emerging Technologies for Sustainable Development
             </div>
         </footer>
