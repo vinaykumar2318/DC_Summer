@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Menu, X } from "lucide-react"; // Import icons
+import Link from 'next/link';
 
 const Navbar = () => {
     const [showModal, setShowModal] = useState(false);
