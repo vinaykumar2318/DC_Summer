@@ -4,16 +4,13 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Menu, X } from "lucide-react"; // Import icons
+import { Menu, X } from "lucide-react";
 import Link from 'next/link';
 
 const Navbar = () => {
     const [showModal, setShowModal] = useState(false);
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
     return (
         <div className="w-full max-w-fit mt-4 mx-10">
-            {/* Carousel */}
             <Carousel
                 autoPlay
                 infiniteLoop
@@ -35,101 +32,64 @@ const Navbar = () => {
                 ))}
             </Carousel>
 
-            {/* Navbar */}
-            <nav className="w-full bg-white shadow-md mt-6 mb-6 p-2 rounded-xl">
-                <div className="flex justify-between items-center px-4">
-                    {/* Logo (Optional) */}
-                    <div className="text-lg font-bold text-gray-700">CETSD</div>
+            <div className='flex justify-center w-full'>
+                <nav className="w-4/5 bg-[#E3F2FD] shadow-md mt-6 mb-6 p-2 rounded-xl">
+                    <div className="flex justify-between items-center text-md font-medium text-gray-700 px-6">
+                        <Link href="/uba" className="px-4 py-2 hover:text-blue-600 transition duration-300">
+                            UBA
+                        </Link>
+                        <Link href="/rutag" className="px-4 py-2 hover:text-blue-600 transition duration-300">
+                            Rutag
+                        </Link>
 
-                    {/* Desktop Menu */}
-                    <div className="hidden md:flex space-x-6 text-lg font-medium text-gray-700">
-                        <a href="#" className="px-4 py-2 hover:text-blue-600 transition duration-300">
-                            Sustainability Plan
-                        </a>
-                        <a href="#" className="px-4 py-2 hover:text-blue-600 transition duration-300">
-                            Seminars
-                        </a>
-
-                        {/* Dropdown */}
                         <div
                             className="relative px-4 py-2 transition duration-300 group"
                             onMouseEnter={() => setShowModal(true)}
                             onMouseLeave={() => setShowModal(false)}
                         >
-                            <span className="text-gray-700 group-hover:text-blue-600 transition duration-300">
-                                Local, Sub-National and National Policy Alignment
-                            </span>
+                            <Link href="/sustainability" className="text-gray-700 group-hover:text-blue-600 transition duration-300">
+                                SUSTAINABILITY PLAN
+                            </Link>
 
                             {showModal && (
-                                <div className="absolute right-0 top-full w-48 bg-white shadow-lg border rounded-lg p-2">
-                                    <a href="https://www.mysiteroodiya.com/"
-                                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition duration-300">
-                                        UBA
-                                    </a>
-                                    <a href="#"
-                                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition duration-300">
-                                        STI
-                                    </a>
-                                    <a href="#"
-                                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition duration-300">
-                                        RUTAG
-                                    </a>
+                                <div className="absolute right-0 top-full w-56 bg-white shadow-lg border rounded-lg p-2">
+                                    <Link
+                                        href="https://www.mysiteroodiya.com/"
+                                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition duration-300"
+                                    >
+                                        Campus Sustainability Projects with OIE
+                                    </Link>
+                                    <Link
+                                        href="#"
+                                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition duration-300"
+                                    >
+                                        Sustainiability Plan and Policy
+                                    </Link>
+                                    <Link
+                                        href="#"
+                                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition duration-300"
+                                    >
+                                        Campus Sustainability
+                                    </Link>
                                 </div>
                             )}
                         </div>
 
-                        <a href="#" className="px-4 py-2 hover:text-blue-600 transition duration-300">
-                            Events
-                        </a>
+                        <Link href="#" className="px-4 py-2 hover:text-blue-600 transition duration-300">
+                            STI HUB
+                        </Link>
+                        <Link href="#" className="px-4 py-2 hover:text-blue-600 transition duration-300">
+                            ETSD SEMINARS
+                        </Link>
+                        <Link href="/newsContent/news" className="px-4 py-2 hover:text-blue-600 transition duration-300">
+                            NEWS
+                        </Link>
+                        <Link href="/events" className="px-4 py-2 hover:text-blue-600 transition duration-300">
+                            EVENTS
+                        </Link>
                     </div>
-
-                    {/* Mobile Menu Button */}
-                    <button
-                        className="md:hidden p-2 rounded-lg text-gray-700 focus:outline-none"
-                        onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    >
-                        {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
-                    </button>
-                </div>
-
-                {/* Mobile Menu */}
-                <div className={`${isMenuOpen ? "block" : "hidden"} md:hidden mt-4`}>
-                    <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                        Sustainability Plan
-                    </a>
-                    <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                        Seminars
-                    </a>
-
-                    {/* Mobile Dropdown */}
-                    <div className="relative">
-                        <button
-                            className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
-                            onClick={() => setShowModal(!showModal)}
-                        >
-                            Local, Sub-National and National Policy Alignment
-                        </button>
-                        {showModal && (
-                            <div className="bg-white shadow-lg border rounded-lg p-2">
-                                <a href="https://www.mysiteroodiya.com/"
-                                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                                    UBA
-                                </a>
-                                <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                                    STI
-                                </a>
-                                <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                                    RUTAG
-                                </a>
-                            </div>
-                        )}
-                    </div>
-
-                    <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                        Events
-                    </a>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
     )
 }

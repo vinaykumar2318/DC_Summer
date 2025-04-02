@@ -162,7 +162,7 @@ const Sustainability = () => {
         <div className="w-full p-6 bg-[#E3F2FD] mb-8 rounded-2xl shadow-md">
           <h2 className="text-3xl font-bold text-blue-700 mb-6">Carbon Emissions</h2>
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-blue-700">Carbon Emissions Audit 2019-20</h3>
+            <h3 className="text-2xl font-bold text-gray-800">Carbon Emissions Audit 2019-20</h3>
             <Link target="_blank" href="http://172.16.100.160:8080/IDRP_Admin/Carbon%20footprint%202019-20%20IIT%20Jodhpur.pdf"><h4 className="text-xl hover:underline font-semibold text-gray-800 mt-2">Carbon Footprint</h4></Link>
             <p className="text-gray-700 text-lg mt-2">
               CETSD and the Office of Infrastructure at IIT Jodhpur engage all stakeholders and receive their 
@@ -171,16 +171,16 @@ const Sustainability = () => {
             </p>
             <div className="mt-4">
               <ul className="list-disc list-inside text-gray-700 space-y-1 mt-2 text-lg">
-                <Link target="_blank" href="http://172.16.100.160:8080/IDRP_Admin/CO2%20emmision%20scope%201%20IITJ.pdf"><li className='w-24 hover:text-blue-600 hover:underline transition-colors'>Scope 1</li></Link>
-                <Link target="_blank" href="http://172.16.100.160:8080/IDRP_Admin/CO2%20emmision%20scope%202%20IITJ.pdf"><li className='w-24 hover:text-blue-600 hover:underline transition-colors'>Scope 2</li></Link>
+                <Link target="_blank" href="http://172.16.100.160:8080/IDRP_Admin/CO2%20emmision%20scope%201%20IITJ.pdf"><li className='w-24 text-blue-600 hover:text-blue-800 hover:underline transition-colors'>Scope 1</li></Link>
+                <Link target="_blank" href="http://172.16.100.160:8080/IDRP_Admin/CO2%20emmision%20scope%202%20IITJ.pdf"><li className='w-24 text-blue-600 hover:text-blue-800 hover:underline transition-colors'>Scope 2</li></Link>
               </ul>
             </div>
           </div>
 
           <div className="pt-6 border-t border-gray-300">
-            <h3 className="text-2xl font-bold text-blue-700">Carbon Emission Audit 2023-24</h3>
+            <h3 className="text-2xl font-bold text-gray-800">Carbon Emission Audit 2023-24</h3>
             <div className="mt-4">
-              <Link target="_blank" href="https://cetsd.iitj.ac.in/wp-content/uploads/2024/04/Indian-Institute-of-Technology-Jodhpur_-Carbon-emission-calculation-2023_2024.pdf" className="text-gray-700 hover:text-blue-600 hover:underline transition-colors">
+              <Link target="_blank" href="https://cetsd.iitj.ac.in/wp-content/uploads/2024/04/Indian-Institute-of-Technology-Jodhpur_-Carbon-emission-calculation-2023_2024.pdf" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors">
                 <p className="text-lg mt-2">Report on Managing Carbon Footprint 2023-2024 of IITJ</p>
               </Link>
             </div>
