@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-const phdAdmission = () => {
+const PhdAdmission = () => {
     return (
         <>
             <div className="flex flex-col w-3/4 rounded-xl mx-auto bg-white">
@@ -17,7 +17,7 @@ const phdAdmission = () => {
                         Students will be encouraged to work on projects aligned with the <strong>United Nations Sustainable Development Goals (SDGs)</strong>, utilizing innovative sustainable technologies and fostering participatory processes. These initiatives aim to integrate sustainability into new product and technology developments.
                     </p>
                     <p className="text-gray-700 text-xl">
-                        More information on the specific SDGs addressed by students in their research projects can be found <Link href="/sdgs" className="text-blue-600 hover:text-blue-800 underline">here</Link>.
+                        More information on the specific SDGs addressed by students in their research projects can be found <Link href="/newsContent/phdStudents" className="text-blue-600 hover:text-blue-800 underline">here</Link>.
                     </p>
                 </div>
 
@@ -63,4 +63,4 @@ const phdAdmission = () => {
     )
 }
 
-export default phdAdmission
+export default PhdAdmission;

@@ -8,7 +8,6 @@ import { Menu, X } from "lucide-react";
 import Link from 'next/link';
 
 const Navbar = () => {
-    const [showModal, setShowModal] = useState(false);
     return (
         <div className="w-full max-w-fit mt-4 mx-10">
             <Carousel
@@ -41,39 +40,9 @@ const Navbar = () => {
                         <Link href="/rutag" className="px-4 py-2 hover:text-blue-600 transition duration-300">
                             Rutag
                         </Link>
-
-                        <div
-                            className="relative px-4 py-2 transition duration-300 group"
-                            onMouseEnter={() => setShowModal(true)}
-                            onMouseLeave={() => setShowModal(false)}
-                        >
-                            <Link href="/sustainability" className="text-gray-700 group-hover:text-blue-600 transition duration-300">
-                                SUSTAINABILITY PLAN
-                            </Link>
-
-                            {showModal && (
-                                <div className="absolute right-0 top-full w-56 bg-white shadow-lg border rounded-lg p-2">
-                                    <Link
-                                        href="https://www.mysiteroodiya.com/"
-                                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition duration-300"
-                                    >
-                                        Campus Sustainability Projects with OIE
-                                    </Link>
-                                    <Link
-                                        href="#"
-                                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition duration-300"
-                                    >
-                                        Sustainiability Plan and Policy
-                                    </Link>
-                                    <Link
-                                        href="#"
-                                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition duration-300"
-                                    >
-                                        Campus Sustainability
-                                    </Link>
-                                </div>
-                            )}
-                        </div>
+                        <Link href="/sustainability/susHome" className="px-4 py-2 hover:text-blue-600 transition duration-300">
+                            SUSTAINABILITY PLAN
+                        </Link>
 
                         <Link href="#" className="px-4 py-2 hover:text-blue-600 transition duration-300">
                             STI HUB
@@ -84,7 +53,7 @@ const Navbar = () => {
                         <Link href="/newsContent/news" className="px-4 py-2 hover:text-blue-600 transition duration-300">
                             NEWS
                         </Link>
-                        <Link href="/events" className="px-4 py-2 hover:text-blue-600 transition duration-300">
+                        <Link href="/eventsContent/events" className="px-4 py-2 hover:text-blue-600 transition duration-300">
                             EVENTS
                         </Link>
                     </div>
