@@ -17,26 +17,25 @@ const MSResearch = () => {
                         Students will be encouraged to work on projects aligned with the United Nations Sustainable Development Goals (SDGs), utilizing innovative sustainable technologies and participatory processes. These initiatives aim to integrate sustainability into new product and technology developments.
                     </p>
                     <p className="text-gray-700 text-xl">
-                        More information on the specific SDGs addressed by students in their research projects can be found <Link href="/sdgs" className="text-blue-600 hover:text-blue-800 underline">here</Link>.
+                        More information on the specific SDGs addressed by students in their research projects can be found <Link href="/newsContent/msStudents" className="text-blue-600 hover:text-blue-800 underline">here</Link>.
                     </p>
                 </div>
 
-                {/* Links to Important Information */}
                 <div className="w-full p-6 bg-[#E3F2FD] mb-8 rounded-2xl space-y-6 shadow-md">
                     <h2 className="text-3xl font-bold text-blue-700">Important Links</h2>
                     <ul className="list-disc list-inside text-gray-700 space-y-4 text-xl">
                         <li className='underline'>
-                            <Link href="https://drive.google.com/file/d/1Ly8yisV0jVso2zabdoUEsdCSbTbLjRfm/view" className="text-blue-600 hover:text-blue-800">
+                            <Link target="_blank" href="https://drive.google.com/file/d/1Ly8yisV0jVso2zabdoUEsdCSbTbLjRfm/view" className="text-blue-600 hover:text-blue-800">
                                 Shortlisted Candidates - MS by Research CETSD (Jan 2024)
                             </Link>
                         </li>
                         <li className='underline'>
-                            <Link href="https://drive.google.com/file/d/15_M4W79KCtT3rvCtvHMIq6uT9nYi4Z2h/view" className="text-blue-600 hover:text-blue-800">
+                            <Link target="_blank" href="https://drive.google.com/file/d/15_M4W79KCtT3rvCtvHMIq6uT9nYi4Z2h/view" className="text-blue-600 hover:text-blue-800">
                                 Interview Reporting Details - MS by Research CETSD (Jan 2024)
                             </Link>
                         </li>
                         <li className='underline'>
-                            <Link href="https://drive.google.com/file/d/1_UQo6HevzBb55l45EysSLgnyfyR1aELT/view" className="text-blue-600 hover:text-blue-800">
+                            <Link target="_blank" href="https://drive.google.com/file/d/1_UQo6HevzBb55l45EysSLgnyfyR1aELT/view" className="text-blue-600 hover:text-blue-800">
                                 Syllabus for Interview - MS by Research CETSD (Jan 2024)
                             </Link>
                         </li>

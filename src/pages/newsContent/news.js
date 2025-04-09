@@ -16,22 +16,22 @@ const News = () => {
                 <h2 className="text-3xl font-bold text-blue-700">Latest Updates</h2>
                 <ul className="list-disc list-inside text-gray-700 space-y-4 text-xl">
                 <li className='underline'>
-                        <Link href="https://cetsd.iitj.ac.in/wp-content/uploads/2024/05/Corrigendum-2-in-shortlisted-candidates_final-1.pdf" className="text-blue-600 hover:text-blue-800">
+                        <Link target="_blank" href="https://cetsd.iitj.ac.in/wp-content/uploads/2024/05/Corrigendum-2-in-shortlisted-candidates_final-1.pdf" className="text-blue-600 hover:text-blue-800">
                         Update on Shortlisted Candidates for PhD Interviews
                         </Link>
                     </li>
                     <li className='underline'>
-                        <Link href="https://cetsd.iitj.ac.in/wp-content/uploads/2024/04/Shortlisted-candidates_Ph.d._cetsd-1-1.pdf" className="text-blue-600 hover:text-blue-800">
+                        <Link target="_blank" href="https://cetsd.iitj.ac.in/wp-content/uploads/2024/04/Shortlisted-candidates_Ph.d._cetsd-1-1.pdf" className="text-blue-600 hover:text-blue-800">
                         Shortlisted Candidates for PhD Interviews
                         </Link>
                     </li>
                     <li className='underline'>
-                        <Link href="/newsContent/phdAdmission" className="text-blue-600 hover:text-blue-800">
+                        <Link target="_blank" href="/newsContent/phdAdmission" className="text-blue-600 hover:text-blue-800">
                         PhD Admissions 2024
                         </Link>
                     </li>
                     <li className='underline'>
-                        <Link href="/newsContent/msResearch" className="text-blue-600 hover:text-blue-800">
+                        <Link target="_blank" href="/newsContent/msResearch" className="text-blue-600 hover:text-blue-800">
                         MS by Research Admissions 2024
                         </Link>
                     </li>
