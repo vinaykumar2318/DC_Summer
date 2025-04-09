@@ -75,10 +75,10 @@ const Navbar = () => {
                             )}
                         </div>
 
-                        <Link href="#" className="px-4 py-2 hover:text-blue-600 transition duration-300">
+                        <Link href="/stihub" className="px-4 py-2 hover:text-blue-600 transition duration-300">
                             STI HUB
                         </Link>
-                        <Link href="#" className="px-4 py-2 hover:text-blue-600 transition duration-300">
+                        <Link href="/etsd" className="px-4 py-2 hover:text-blue-600 transition duration-300">
                             ETSD SEMINARS
                         </Link>
                         <Link href="/newsContent/news" className="px-4 py-2 hover:text-blue-600 transition duration-300">
