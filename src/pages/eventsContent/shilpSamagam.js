@@ -4,7 +4,7 @@ import React from 'react'
 const shilpSamagam = () => {
   return (
     <>
-        <div className="flex flex-col w-3/4 rounded-xl mx-auto bg-white">
+        <div className="flex flex-col w-full sm:w-4/5 md:w-3/4 rounded-xl mx-auto bg-white">
             <div className="w-full p-6 bg-[#E3F2FD] mb-8 rounded-2xl shadow-md space-y-4">
                 <h2 className="text-3xl font-bold text-blue-700">Shilp Samagam Mela 2024</h2>
                 <p className="text-gray-700 text-xl">

@@ -27,7 +27,7 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link target='_blank' href="#" className="text-blue-600 hover:text-blue-800">
+                                <Link target='_blank' href="/etsd" className="text-blue-600 hover:text-blue-800">
                                     ETSD Seminars
                                 </Link>
                             </li>

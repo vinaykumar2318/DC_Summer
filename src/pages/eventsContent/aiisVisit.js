@@ -4,7 +4,7 @@ import React from 'react'
 const AiisVisit = () => {
   return (
     <>
-      <div className="flex flex-col w-3/4 rounded-xl mx-auto bg-white">
+      <div className="flex flex-col w-full sm:w-4/5 md:w-3/4 rounded-xl mx-auto bg-white">
         <div className="w-full p-6 bg-[#E3F2FD] mb-8 rounded-2xl space-y-6 shadow-md">
           <h2 className="text-3xl font-bold text-blue-700">American Institute of Indian Studies Visit</h2>
           <p className="text-gray-700 text-xl mt-2">

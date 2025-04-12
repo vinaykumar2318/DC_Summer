@@ -24,7 +24,7 @@ const msStudents = [
 const MsStudents = () => {
   return (
     <>
-        <div className="flex flex-col w-3/4 mx-auto rounded-xl bg-white p-6 space-y-10">
+        <div className="flex flex-col w-full sm:w-4/5 md:w-3/4 mx-auto rounded-xl bg-white p-6 space-y-10">
             <h2 className="text-4xl font-bold text-blue-800 text-center">MS (by Research) Students</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 {msStudents.map((student, index) => (

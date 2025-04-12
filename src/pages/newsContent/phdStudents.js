@@ -37,7 +37,7 @@ const phdStudents = [
 const PhdStudents = () => {
   return (
     <>
-        <div className="flex flex-col w-3/4 rounded-xl mx-auto bg-white">
+        <div className="flex flex-col w-full sm:w-4/5 md:w-3/4 rounded-xl mx-auto bg-white">
             <h2 className="text-4xl font-bold mb-5 text-blue-800 text-center">PhD Students</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 {phdStudents.map((student, index) => (
