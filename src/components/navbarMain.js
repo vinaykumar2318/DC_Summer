@@ -7,7 +7,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Menu, X } from "lucide-react";
 import Link from 'next/link';
 
-const NavbarOutreach = () => {
+const NavbarMain = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -63,11 +63,9 @@ const NavbarOutreach = () => {
       </Carousel>
       <div className="flex justify-center w-full h-20 sm:h-24 md:h-24 lg:h-28">
         <nav className="w-full max-w-7xl mx-auto bg-[#E3F2FD] shadow-md mt-6 mb-6 p-1 sm:p-2 rounded-xl relative">
-            
             <div className="flex justify-between items-center px-2">
             <div className="relative md:hidden flex flex-row justify-between items-center w-full px-2" ref={dropdownRef}>
-                <Link href="/" className='text-black'>CETSD</Link>
-                
+                <Link href="/" className='text-black font-semibold'>CETSD</Link>
                 <button
                 className="text-gray-700"
                 onClick={() => setMenuOpen(prev => !prev)}
@@ -77,31 +75,27 @@ const NavbarOutreach = () => {
 
                 {menuOpen && (
                 <div className="absolute left-0 mt-2 w-52 bg-white border border-gray-200 rounded-lg shadow-md z-50 py-2">
-                    <Link href="/uba" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm sm:text-base text-gray-700 hover:bg-blue-100">UBA</Link>
-                    <Link href="/rutag" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm sm:text-base text-gray-700 hover:bg-blue-100">RUTAG</Link>
-                    <Link href="/sustainability/susHome" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm sm:text-base text-gray-700 hover:bg-blue-100">SUSTAINABILITY PLAN</Link>
-                    <Link href="/stihub" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm sm:text-base text-gray-700 hover:bg-blue-100">STI HUB</Link>
-                    <Link href="/etsd" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm sm:text-base text-gray-700 hover:bg-blue-100">ETSD SEMINARS</Link>
-                    <Link href="/newsContent/news" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm sm:text-base text-gray-700 hover:bg-blue-100">NEWS</Link>
-                    <Link href="/eventsContent/events" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm sm:text-base text-gray-700 hover:bg-blue-100">EVENTS</Link>
+                    <Link href="/people/main" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">People</Link>
+                    <Link href="/academic-programs" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Academic Programs</Link>
+                    <Link href="/publications" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Publication</Link>
+                    <Link href="/projects" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Projects</Link>
+                    <Link href="/outreach/main" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Outreach</Link>
                 </div>
                 )}
             </div>
             </div>
 
-            <div className="hidden md:flex justify-between items-center text-sm lg:text-lg font-medium text-gray-700 px-4 mt-4 space-x-4 md:space-x-6">
-            <Link href="/outreach/uba" className="hover:text-blue-600">UBA</Link>
-            <Link href="/outreach/rutag" className="hover:text-blue-600">RUTAG</Link>
-            <Link href="/sustainability/susHome" className="hover:text-blue-600">SUSTAINABILITY PLAN</Link>
-            <Link href="/outreach/stihub" className="hover:text-blue-600">STI HUB</Link>
-            <Link href="/outreach/etsd" className="hover:text-blue-600">ETSD SEMINARS</Link>
-            <Link href="/newsContent/news" className="hover:text-blue-600">NEWS</Link>
-            <Link href="/eventsContent/events" className="hover:text-blue-600">EVENTS</Link>
-          </div>
+            <div className="hidden md:flex justify-between items-center text-sm lg:text-lg font-medium text-gray-700 px-8 mt-4 space-x-4 md:space-x-6">
+                <Link href="/people/main" className="hover:text-blue-600">People</Link>
+                <Link href="/academics/main" className="hover:text-blue-600">Academic Programs</Link>
+                <Link href="/publications" className="hover:text-blue-600">Publication</Link>
+                <Link href="/projects" className="hover:text-blue-600">Projects</Link>
+                <Link href="/outreach/main" className="hover:text-blue-600">Outreach</Link>
+            </div>
         </nav>
       </div>
     </div>
-  )
+  );
 }
 
-export default NavbarOutreach;
+export default NavbarMain;
