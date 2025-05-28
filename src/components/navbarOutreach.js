@@ -7,7 +7,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Menu, X } from "lucide-react";
 import Link from 'next/link';
 
-const Navbar = () => {
+const NavbarOutreach = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -90,11 +90,11 @@ const Navbar = () => {
             </div>
 
             <div className="hidden md:flex justify-between items-center text-sm lg:text-lg font-medium text-gray-700 px-4 mt-4 space-x-4 md:space-x-6">
-            <Link href="/uba" className="hover:text-blue-600">UBA</Link>
-            <Link href="/rutag" className="hover:text-blue-600">RUTAG</Link>
+            <Link href="/outreach/uba" className="hover:text-blue-600">UBA</Link>
+            <Link href="/outreach/rutag" className="hover:text-blue-600">RUTAG</Link>
             <Link href="/sustainability/susHome" className="hover:text-blue-600">SUSTAINABILITY PLAN</Link>
-            <Link href="/stihub" className="hover:text-blue-600">STI HUB</Link>
-            <Link href="/etsd" className="hover:text-blue-600">ETSD SEMINARS</Link>
+            <Link href="/outreach/stihub" className="hover:text-blue-600">STI HUB</Link>
+            <Link href="/outreach/etsd" className="hover:text-blue-600">ETSD SEMINARS</Link>
             <Link href="/newsContent/news" className="hover:text-blue-600">NEWS</Link>
             <Link href="/eventsContent/events" className="hover:text-blue-600">EVENTS</Link>
           </div>
@@ -104,4 +104,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar;
+export default NavbarOutreach;

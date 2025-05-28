@@ -16,7 +16,7 @@ const STIHUB = () => {
                 </p>
                 <p className="text-gray-700 text-xl mt-2">
                     The Rope and Geotextile Manufacturing vertical focuses on training communities on making yarns using 
-                    natural fibers and its value addition by converting it into products. These products include<Link href="/stiProducts" 
+                    natural fibers and its value addition by converting it into products. These products include<Link href="/outreach/stiProducts" 
                     className="px-4 py-2 hover:text-blue-600 transition duration-300 hover:underline">
                     meshmats, nursery pouches, corridor mats, table mats and tea coasters.</Link>
                 </p>

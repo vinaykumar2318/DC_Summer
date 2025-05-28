@@ -10,7 +10,6 @@ const STIHUBPRODUCT = () => {
 
                 <h3 className="text-2xl font-semibold text-gray-800 mt-2">Corridor Mat</h3>
 
-                {/* Centered Image Wrapper with Same Width as Text */}
                 <div className="max-w-3xl mx-auto space-y-8">
                     <Image 
                         src="/STIHUB/p1.jpg" 
@@ -34,7 +33,6 @@ const STIHUBPRODUCT = () => {
 
                 <h3 className="text-2xl font-semibold text-gray-800 mt-2">Table Mat</h3>
 
-                {/* Centered Image Wrapper with Same Width as Text */}
                 <div className="max-w-3xl mx-auto space-y-8">
                     <Image 
                         src="/STIHUB/p3.jpg" 
@@ -123,7 +121,6 @@ const STIHUBPRODUCT = () => {
 
                 <h3 className="text-2xl font-semibold text-gray-800 mt-2">Tea Coaster</h3>
 
-                {/* Centered Image Wrapper with Same Width as Text */}
                 <div className="max-w-3xl mx-auto space-y-8">
                     <Image 
                         src="/STIHUB/p10.jpg" 

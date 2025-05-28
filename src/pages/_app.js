@@ -1,12 +1,12 @@
 import "@/styles/globals.css";
-import Navbar from "@/components/navbar";
+import NavbarOutreach from "@/components/navbarOutreach";
 import Footer from "@/components/footer";
 import Head from "next/head";
 
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <Navbar/>
+      <NavbarOutreach/>
       <Head>
         <title>CETSD - IIT Jodhpur</title>
       </Head>
