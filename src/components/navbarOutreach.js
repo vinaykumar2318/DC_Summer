@@ -77,11 +77,11 @@ const NavbarOutreach = () => {
 
                 {menuOpen && (
                 <div className="absolute left-0 mt-2 w-52 bg-white border border-gray-200 rounded-lg shadow-md z-50 py-2">
-                    <Link href="/uba" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm sm:text-base text-gray-700 hover:bg-blue-100">UBA</Link>
-                    <Link href="/rutag" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm sm:text-base text-gray-700 hover:bg-blue-100">RUTAG</Link>
+                    <Link href="/outreach/uba" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm sm:text-base text-gray-700 hover:bg-blue-100">UBA</Link>
+                    <Link href="/outreach/rutag" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm sm:text-base text-gray-700 hover:bg-blue-100">RUTAG</Link>
                     <Link href="/sustainability/susHome" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm sm:text-base text-gray-700 hover:bg-blue-100">SUSTAINABILITY PLAN</Link>
-                    <Link href="/stihub" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm sm:text-base text-gray-700 hover:bg-blue-100">STI HUB</Link>
-                    <Link href="/etsd" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm sm:text-base text-gray-700 hover:bg-blue-100">ETSD SEMINARS</Link>
+                    <Link href="/outreach/stihub" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm sm:text-base text-gray-700 hover:bg-blue-100">STI HUB</Link>
+                    <Link href="/outreach/etsd" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm sm:text-base text-gray-700 hover:bg-blue-100">ETSD SEMINARS</Link>
                     <Link href="/newsContent/news" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm sm:text-base text-gray-700 hover:bg-blue-100">NEWS</Link>
                     <Link href="/eventsContent/events" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm sm:text-base text-gray-700 hover:bg-blue-100">EVENTS</Link>
                 </div>

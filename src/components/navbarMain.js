@@ -76,7 +76,7 @@ const NavbarMain = () => {
                 {menuOpen && (
                 <div className="absolute left-0 mt-2 w-52 bg-white border border-gray-200 rounded-lg shadow-md z-50 py-2">
                     <Link href="/people/main" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">People</Link>
-                    <Link href="/academic/main" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Academic Programs</Link>
+                    <Link href="/academics/main" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Academic Programs</Link>
                     <Link href="/publications" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Publication</Link>
                     <Link href="/projects" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Projects</Link>
                     <Link href="/outreach/main" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Outreach</Link>
