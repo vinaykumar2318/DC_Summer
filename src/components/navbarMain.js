@@ -4,17 +4,22 @@ import React, { useState, useRef, useEffect } from 'react'
 import Image from 'next/image'
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 import Link from 'next/link';
 
 const NavbarMain = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [projectsOpen, setProjectsOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const projectsDropdownRef = useRef(null);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setMenuOpen(false);
+      }
+      if (projectsDropdownRef.current && !projectsDropdownRef.current.contains(event.target)) {
+        setProjectsOpen(false);
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
@@ -78,7 +83,29 @@ const NavbarMain = () => {
                     <Link href="/people/main" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">People</Link>
                     <Link href="/academics/main" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Academic Programs</Link>
                     <Link href="/publications" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Publication</Link>
-                    <Link href="/projects" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Projects</Link>
+                    <div className="relative">
+                      <div className="flex items-center">
+                        <Link href="/projects/main" onClick={() => setMenuOpen(false)} className="flex-1 px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Projects</Link>
+                        <button 
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setProjectsOpen(!projectsOpen);
+                          }}
+                          className="px-2 py-2 text-gray-700"
+                        >
+                          {projectsOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                        </button>
+                      </div>
+                      {projectsOpen && (
+                        <div className="pl-4">
+                          <Link href="/projects/ongoing" onClick={() => {setMenuOpen(false); setProjectsOpen(false);}} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">On going projects</Link>
+                          <Link href="/projects/experiment-plots" onClick={() => {setMenuOpen(false); setProjectsOpen(false);}} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Experiment plots</Link>
+                          <Link href="/projects/aspiration-districts" onClick={() => {setMenuOpen(false); setProjectsOpen(false);}} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Aspiration Districts</Link>
+                          <Link href="/projects/kvic" onClick={() => {setMenuOpen(false); setProjectsOpen(false);}} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">KVIC</Link>
+                          <Link href="/projects/c-ganga" onClick={() => {setMenuOpen(false); setProjectsOpen(false);}} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">C Ganga</Link>
+                        </div>
+                      )}
+                    </div>
                     <Link href="/outreach/main" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Outreach</Link>
                 </div>
                 )}
@@ -89,7 +116,29 @@ const NavbarMain = () => {
                 <Link href="/people/main" className="hover:text-blue-600">People</Link>
                 <Link href="/academics/main" className="hover:text-blue-600">Academic Programs</Link>
                 <Link href="/publications" className="hover:text-blue-600">Publication</Link>
-                <Link href="/projects" className="hover:text-blue-600">Projects</Link>
+                <div className="relative" ref={projectsDropdownRef}>
+                  <div className="flex items-center">
+                    <Link href="/projects/main" className="hover:text-blue-600">Projects</Link>
+                    <button 
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setProjectsOpen(!projectsOpen);
+                      }}
+                      className="ml-1 text-gray-700 hover:text-blue-600"
+                    >
+                      {projectsOpen ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+                    </button>
+                  </div>
+                  {projectsOpen && (
+                    <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-md z-50 py-2">
+                      <Link href="https://iitj.ac.in/CETSD/index.php?id=ongoing_projects" onClick={() => setProjectsOpen(false)} className="block px-4 py-2 text-sm hover:bg-blue-100">On going projects</Link>
+                      <Link href="https://iitj.ac.in/CETSD/index.php?id=experimental_plot" onClick={() => setProjectsOpen(false)} className="block px-4 py-2 text-sm hover:bg-blue-100">Experiment plots</Link>
+                      <Link href="https://iitj.ac.in/techscape/vol01/issue01/issue01/impacting-life-in-rural-rajasthan-through-emerging-technologies/" onClick={() => setProjectsOpen(false)} className="block px-4 py-2 text-sm hover:bg-blue-100">Aspiration Districts</Link>
+                      <Link href="https://iitj.ac.in/CETSD/index.php?id=SFURTI_cluster" onClick={() => setProjectsOpen(false)} className="block px-4 py-2 text-sm hover:bg-blue-100">KVIC</Link>
+                      <Link href="/projects/cGanga" onClick={() => setProjectsOpen(false)} className="block px-4 py-2 text-sm hover:bg-blue-100">C Ganga</Link>
+                    </div>
+                  )}
+                </div>
                 <Link href="/outreach/main" className="hover:text-blue-600">Outreach</Link>
             </div>
         </nav>
