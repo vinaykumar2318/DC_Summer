@@ -16,9 +16,8 @@ const STIHUB = () => {
                 </p>
                 <p className="text-gray-700 text-base sm:text-lg md:text-xl mt-2">
                     The Rope and Geotextile Manufacturing vertical focuses on training communities on making yarns using 
-                    natural fibers and its value addition by converting it into products. These products include<Link href="/outreach/stiProducts" 
-                    className="px-4 py-2 hover:text-blue-600 transition duration-300 hover:underline">
-                    meshmats, nursery pouches, corridor mats, table mats and tea coasters.</Link>
+                    natural fibers and its value addition by converting it into products. These products include <Link href="/outreach/stiProducts" 
+                    className='text-blue-700 hover:underline'>meshmats, nursery pouches, corridor mats, table mats and tea coasters.</Link>
                 </p>
                 <p className="text-gray-700 text-base sm:text-lg md:text-xl mt-2">
                     The SSPV or subsurface porous vessel technology is used for irrigation in arid soil. This encourages vegetable 
@@ -73,12 +72,8 @@ const STIHUB = () => {
                         <span className="px-4 py-2 rounded-full text-xl font-semibold" style={{ backgroundColor: '#CCDFFC', color: '#060D17', border: '2px solid #1447E6' }}>Jodhpur</span>
                         <span className="px-4 py-2 rounded-full text-xl font-semibold" style={{ backgroundColor: '#CCDFFC', color: '#060D17', border: '2px solid #1447E6' }}>Nagaur</span>
                     </div>
-
-
-                    {/* Project Map Section */}
-                    {/* <h3 className="text-2xl font-bold text-blue-800 mt-6">Project Map</h3> */}
                     
-                    {/* Image Area Matching Paragraph Width */}
+                    {/* Image Area */}
                     <div className="mt-4">
                         <Image 
                             src="/STIHUB/map.png" 
